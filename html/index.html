@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <title>hamlit project</title>
 </head>
 <body>
@@ -55,37 +57,56 @@
                 </section>
                 <section class="skill">
                     <div class="skill-line"></div>
-                    <h1>I can use</h1>
-                    <div class="skill-list">
-                        <ul class="skll-front-end">
-                            <li>
-                                <img src="../img/skills_1.png" alt="">
-                            </li>
-                            <li>
-                                <img src="../img/skills_2.png" alt="">
-                            </li>
-                            <li>
-                                <img src="../img/skills_3.png" alt="">
-                            </li>
-                            <li>
-                                <img src="../img/skills_4.png" alt="">
-                            </li>
-                        </ul>
-                        <ul class="skill-design-tool">
-                            <li>
-                                <img src="../img/skills_tool_1.png" alt="">
-                            </li>
-                            <li>
-                                <img src="../img/skills_tool_2.png" alt="">
-                            </li>
-                            <li>
-                                <img src="../img/skills_tool_3.png" alt="">
-                            </li>
-                        </ul>
+                    <div class="skill-box" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div ></div>
+                        <h1 class="flex-center skill-box-bottom-margin">I can use</h1>
+                        <div class="skill-list skill-box-style">
+                            <ul class="skill-front-end flex-center-space-between skill-box-style">
+                                <li>
+                                    <img src="../img/skills_1.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../img/skills_2.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../img/skills_3.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../img/skills_4.png" alt="">
+                                </li>
+                            </ul>
+                            <ul class="skill-design-tool flex-center-space-between skill-box-style">
+                                <li>
+                                    <img src="../img/skills_tool_1.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../img/skills_tool_2.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../img/skills_tool_3.png" alt="">
+                                </li>
+                            </ul>
+                            <ul class="skill-commu-tool flex-center-space-between">
+                                <li>
+                                    <img src="../img/skills_tool_4.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="../img/skill_tool_5.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </section>
+                <section class="work">
+                    <div class="skill-line skill-line-work"></div>
                 </section>
             </div>
         </main>
     </div>
+
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

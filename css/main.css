@@ -77,13 +77,6 @@
   position: relative;
   margin: 50px 0;
 }
-.skill-line:before {
-  content: "";
-  display: block;
-  width: 50%;
-  background: #d8d8d8;
-  height: 1px;
-}
 .skill-line:after {
   content: "SKILL";
   font-family: Work Sans, sans-serif;
@@ -96,21 +89,39 @@
   transform: translate(-10%, 50%);
 }
 /* skill-front-end list */
+.skill-line {
+  margin-bottom: 100px;
+}
+.skill-box {
+  background: #d3d3d3d2;
+  border-radius: 50px;
+}
 .skill h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-  font-size: 2rem;
+  padding: 40px 0;
+  font-size: 3rem;
+  color: #242527;
 }
 .skill-list {
   width: 800px;
-  margin: 0 auto;
-}
-.skill-list .skll-front-end {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 100px;
 }
 /* skill-design-tool */
+.skill-design-tool {
+  width: 500px;
+}
+/* skill-commu-tool */
+.skill-commu-tool {
+  width: 300px;
+  margin: 0 auto;
+}
+/* work */
+.skill-line-work:after {
+  content: "WORK";
+  font-family: Work Sans, sans-serif;
+  font-size: 14px;
+  color: #c8c8c8;
+  padding-left: 14px;
+  position: absolute;
+  right: 45%;
+  bottom: 50%;
+  transform: translate(-10%, 50%);
+}

@@ -57,3 +57,25 @@ i {
   display: flex;
   border: thin solid var(--border-color);
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.flex-center-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-box-style {
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+.skill-line:before {
+  content: "";
+  display: block;
+  width: 50%;
+  background: #d8d8d8;
+  height: 1px;
+}
