@@ -136,26 +136,7 @@ class SupahScroll {
       if (this.supahScroll === null) return
       document.body.style.height = `${this.supahScroll.getBoundingClientRect().height}px`
     }
-    
-    pause() {
-      document.body.style.overflow = 'hidden'
-      cancelAnimationFrame(this.raf)
-    }
-    
-    play() {
-      document.body.style.overflow = 'inherit'
-      this.raf = requestAnimationFrame(this.animate.bind(this))
-    }
-    
-    destroy() {
-      this.supahScroll.classList.remove('supah-scroll')
-      this.supahScroll.style.transform = 'none'
-      document.body.style.overflow = 'inherit'
-      window.removeEventListener('resize', this.update)
-      cancelAnimationFrame(this.raf)
-      delete this.supahScroll
-    }
-  
+
     animate() {
       this.scrollY += (window.scrollY - this.scrollY) * this.speed
       this.supahScroll.style.transform = `translate3d(0,${-this.scrollY}px,0)`
@@ -179,7 +160,6 @@ class SupahScroll {
       window.addEventListener('resize', this.update.bind(this))
     }
   }
-  
   
   /*------------------------------
   Initialize
